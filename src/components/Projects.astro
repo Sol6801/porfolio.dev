@@ -90,16 +90,17 @@ const PROJECTS = [
     title: "Dunya Idiomas",
     description:
       "Sitio web informativo multilingüe desarrollado para una academia de idiomas. Implementado con Next.js y Next Intl para ofrecer soporte en varios idiomas.",
-    link: "", // Agrega el enlace si lo tienes
-    image: "/projects/dunya.webp", // Cambia la ruta si es necesario
+    link: "https://dunyaidiomas.com", // Agrega el enlace si lo tienes
+    github: "https://github.com/Sol6801/dunya", // Agrega el repositorio si lo tienes
+    image: "/projects/dunyaidiomas.webp", // Cambia la ruta si es necesario
     tags: [TAGS.NEXT, TAGS.TAILWIND,],
   },
   {
     title: "Planner Buddy",
     description:
       "App web dinámica para tomar decisiones en grupo de forma interactiva. Creada con Next.js, Tailwind CSS, AWS, Neon Tech, Prisma y Zustand.",
-    link: "", // Agrega el enlace si lo tienes
-    github: "", // Agrega el repositorio si lo tienes
+    link: "https://planner-buddy.vercel.app", // Agrega el enlace si lo tienes
+    github: "https://github.com/Sol6801/proyecto-final-front", // Agrega el repositorio si lo tienes
     image: "/projects/plannerbuddy.webp", // Cambia la ruta si es necesario
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.COHERE, TAGS.JAVASCRIPT, TAGS.AWS, TAGS.NEON_TECH, TAGS.VERCEL, TAGS.NODE, TAGS.EXPRESS, TAGS.PRISMA],
   },
@@ -107,23 +108,26 @@ const PROJECTS = [
     title: "Recorriendo Argentina",
     description:
       "Sitio web informativo sobre Argentina, desarrollado con HTML, CSS y JavaScript para una experiencia interactiva.",
-    link: "", // Agrega el enlace si lo tienes
-    image: "/projects/argentina.webp", // Cambia la ruta si es necesario
+    link: "https://sol6801.github.io/TPStaticWeb/index.html", // Agrega el enlace si lo tienesplanner-buddy.vercel.app/
+    github: "https://github.com/Sol6801/TPStaticWeb", // Agrega el repositorio si lo tienes
+    image: "/projects/recorriendoargentina.webp", // Cambia la ruta si es necesario
     tags: [TAGS.HTML, TAGS.CSS,TAGS.JAVASCRIPT],
   },
   {
     title: "Maderera",
     description:
       "Sitio web estático desarrollado por encargo para una maderera. Implementado con HTML y CSS vainilla para garantizar una presencia en línea efectiva.",
-    link: "", // Agrega el enlace si lo tienes
-    image: "/projects/maderera.webp", // Cambia la ruta si es necesario
+    link: "https://sol6801.github.io/maderasbarbero/", // Agrega el enlace si lo tienes
+    github:"https://github.com/Sol6801/maderasbarbero",
+    image: "/projects/maderasbarbero.webp", // Cambia la ruta si es necesario
     tags: [TAGS.HTML, TAGS.CSS],
   },
   {
     title: "Panadería",
     description:
       "Sitio web estático desarrollado para una panadería. Creado con HTML y CSS vainilla para destacar los productos y servicios del negocio.",
-    link: "", // Agrega el enlace si lo tienes
+    link: "https://sol6801.github.io/BAmulti/", // Agrega el enlace si lo tienes
+    github:"https://github.com/Sol6801/BAmulti",
     image: "/projects/panaderia.webp", // Cambia la ruta si es necesario
     tags: [TAGS.HTML, TAGS.CSS, TAGS.BOOTSTRAP],
   },
@@ -136,9 +140,17 @@ const PROJECTS = [
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
-    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Proyecto realizado" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
-    </div>
+    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl border-transparent">
+      <img 
+  alt="Proyecto realizado" 
+  class="rounded-xl object-cover object-top w-full h-72 transition duration-500 scale-100 hover:scale-90" 
+  loading="lazy" 
+  src={image} 
+/>
+
+
+
+ </div>
   </div>
 
   <div class="w-full md:w-1/2 md:max-w-lg">
