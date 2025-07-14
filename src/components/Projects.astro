@@ -15,6 +15,7 @@ import Vercel from "./icons/Vercel.astro"
 import Node from "./icons/Node.astro"
 import Express from "./icons/Express.astro"
 import Cohere from "./icons/Cohere.astro"
+import TypeScript from "./icons/TypeScript.astro"
 
 
 const TAGS = {
@@ -47,6 +48,11 @@ const TAGS = {
     name: "JavaScript",
     class: "bg-yellow-400 text-black",
     icon: JavaScript, 
+  },  
+  TYPESCRIPT: {
+    name: "Typescript",
+    class: "bg-blue-400 text-white",
+    icon: TypeScript, 
   },
   HTML: {
     name: "HTML",
@@ -85,7 +91,25 @@ const TAGS = {
   }
 };
 
-const PROJECTS = [
+const PROJECTS = [  
+  {
+    title: "MSK Latam",
+    description:
+      "Sitio web dinamico desarrollado para una empresa de venta de cursos de medicina. Implementado con Next.js.",
+    link: "https://msklatam.com", // Agrega el enlace si lo tienes
+    // github: "https://github.com/Sol6801/dunya", // Agrega el repositorio si lo tienes
+    image: "/projects/msklatam.png", // Cambia la ruta si es necesario
+    tags: [TAGS.NEXT, TAGS.TAILWIND,TAGS.TYPESCRIPT,],
+  },
+  {
+    title: "Maderera Version Actualizada",
+    description:
+      "Sitio web estático desarrollado para una maderera. Implementado con Next.js y Tailwind CSS para brindar mayor escalabilidad al realizar las correspondientes actualizaciones.",
+    link: "https://maderasbarbero.com.ar", // Agrega el enlace si lo tienes
+    github: "https://github.com/Sol6801/maderasbarbero", // Agrega el repositorio si lo tienes
+    image: "/projects/maderasbarbero2.png", // Cambia la ruta si es necesario
+    tags: [TAGS.NEXT, TAGS.TAILWIND,TAGS.TYPESCRIPT,],
+  },
   {
     title: "Dunya Idiomas",
     description:
