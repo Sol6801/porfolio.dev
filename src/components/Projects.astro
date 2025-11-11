@@ -16,7 +16,9 @@ import Node from "./icons/Node.astro"
 import Express from "./icons/Express.astro"
 import Cohere from "./icons/Cohere.astro"
 import TypeScript from "./icons/TypeScript.astro"
-
+import JWS from "./icons/JWS.astro"
+import Zustand from "./icons/Zustand.astro"
+import PHP from "./icons/PHP.astro"
 
 const TAGS = {
   NEXT: {
@@ -88,6 +90,21 @@ const TAGS = {
     name:"Cohere",
     class:"bg-gray-800 text-white",
     icon: Cohere,
+  },
+    JWS:{
+    name:"JWS",
+    class:"bg-gray-300 text-black",
+    icon: JWS,
+  },
+    ZUSTAND:{
+    name:"Zustand",
+    class:"bg-gray-700 text-white",
+    icon: Zustand,
+  },
+    PHP:{
+    name:"PHP",
+    class:"bg-gray-100 text-black",
+    icon: PHP,
   }
 };
 
@@ -95,7 +112,7 @@ const PROJECTS = [
   {
     title: "MSK Latam",
     description:
-      "Sitio web dinamico desarrollado para una empresa de venta de cursos de medicina. Implementado con Next.js.",
+      "Sitio web dinámico desarrollado para una empresa de cursos de medicina, en colaboración con el equipo de Stratos, una empresa de soluciones informáticas. Participé en la implementación del diseño del frontend y la integración con el backend, utilizando Next.js.",
     link: "https://msklatam.com", // Agrega el enlace si lo tienes
     // github: "https://github.com/Sol6801/dunya", // Agrega el repositorio si lo tienes
     image: "/projects/msklatam.png", // Cambia la ruta si es necesario
@@ -108,7 +125,7 @@ const PROJECTS = [
     link: "https://maderasbarbero.com.ar", // Agrega el enlace si lo tienes
     github: "https://github.com/Sol6801/maderasbarbero", // Agrega el repositorio si lo tienes
     image: "/projects/maderasbarbero2.png", // Cambia la ruta si es necesario
-    tags: [TAGS.NEXT, TAGS.TAILWIND,TAGS.TYPESCRIPT,],
+    tags: [TAGS.NEXT, TAGS.TAILWIND,TAGS.TYPESCRIPT,TAGS.PHP,],
   },
   {
     title: "Dunya Idiomas",
@@ -117,7 +134,7 @@ const PROJECTS = [
     link: "https://dunyaidiomas.com", // Agrega el enlace si lo tienes
     github: "https://github.com/Sol6801/dunya", // Agrega el repositorio si lo tienes
     image: "/projects/dunyaidiomas.webp", // Cambia la ruta si es necesario
-    tags: [TAGS.NEXT, TAGS.TAILWIND,],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.PHP,],
   },
   {
     title: "Planner Buddy",
@@ -126,7 +143,7 @@ const PROJECTS = [
     link: "https://planner-buddy.vercel.app", // Agrega el enlace si lo tienes
     github: "https://github.com/Sol6801/proyecto-final-front", // Agrega el repositorio si lo tienes
     image: "/projects/plannerbuddy.webp", // Cambia la ruta si es necesario
-    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.COHERE, TAGS.JAVASCRIPT, TAGS.AWS, TAGS.NEON_TECH, TAGS.VERCEL, TAGS.NODE, TAGS.EXPRESS, TAGS.PRISMA],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.COHERE, TAGS.JAVASCRIPT, TAGS.AWS, TAGS.NEON_TECH, TAGS.VERCEL, TAGS.NODE, TAGS.EXPRESS, TAGS.PRISMA, TAGS.JWS, TAGS.ZUSTAND],
   },
   {
     title: "Recorriendo Argentina",
@@ -144,7 +161,7 @@ const PROJECTS = [
     link: "https://sol6801.github.io/maderasbarbero/", // Agrega el enlace si lo tienes
     github:"https://github.com/Sol6801/maderasbarbero",
     image: "/projects/maderasbarbero.webp", // Cambia la ruta si es necesario
-    tags: [TAGS.HTML, TAGS.CSS],
+    tags: [TAGS.HTML, TAGS.CSS,],
   },
   {
     title: "Panadería",
