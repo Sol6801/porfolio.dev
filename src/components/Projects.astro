@@ -19,6 +19,7 @@ import TypeScript from "./icons/TypeScript.astro"
 import JWS from "./icons/JWS.astro"
 import Zustand from "./icons/Zustand.astro"
 import PHP from "./icons/PHP.astro"
+import i18n from "./icons/i18n.astro"
 
 const TAGS = {
   NEXT: {
@@ -105,7 +106,12 @@ const TAGS = {
     name:"PHP",
     class:"bg-gray-100 text-black",
     icon: PHP,
-  }
+  },
+    IN:{
+    name:"i18n",
+    class:"bg-gray-100 text-black",
+    icon: i18n,
+  },
 };
 
 const PROJECTS = [  
@@ -134,7 +140,7 @@ const PROJECTS = [
     link: "https://dunyaidiomas.com", // Agrega el enlace si lo tienes
     github: "https://github.com/Sol6801/dunya", // Agrega el repositorio si lo tienes
     image: "/projects/dunyaidiomas.webp", // Cambia la ruta si es necesario
-    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.PHP,],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.PHP, TAGS.IN],
   },
   {
     title: "Planner Buddy",
